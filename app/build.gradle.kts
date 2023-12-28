@@ -72,6 +72,8 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
+    //Kotlin coroutines
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
     // ViewModel utilities for Compose
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
     // Lifecycle utilities for Compose
