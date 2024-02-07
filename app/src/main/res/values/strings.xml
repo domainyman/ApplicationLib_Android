@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ApplicationLib</string>
-    <string name="web_client_id">746909821142-crb1d2s393s7f8n6e0uqbifkn8634p4a.apps.googleusercontent.com</string>
+    <string name="web_client_id">746909821142-pvaee8mo4re793jhntbvvbjs3jka00ai.apps.googleusercontent.com</string>
+    <string name="main_logo_name">Application Library</string>
 </resources>
