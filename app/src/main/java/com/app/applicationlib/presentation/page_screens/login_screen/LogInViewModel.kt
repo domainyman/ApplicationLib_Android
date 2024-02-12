@@ -24,7 +24,7 @@ class LogInViewModel @Inject constructor(
         repository.loginUser(email,password).collect{result ->
             when(result){
                 is Resource.Success ->{
-                    _logInstate.send(LogInState(isSuccess = "Sign In Success"))
+                    _logInstate.send(LogInState(isSuccess = "Login Success"))
                 }
                 is Resource.Loading ->{
                     _logInstate.send(LogInState(isLoading = true))
@@ -40,7 +40,7 @@ class LogInViewModel @Inject constructor(
         repository.firebaseSignInWithGoogle(credential).collect{result ->
             when(result){
                 is Resource.Success ->{
-                    _logInstate.send(LogInState(isSuccess = "Sign In Success"))
+                    _logInstate.send(LogInState(isSuccess = "Login Success"))
                 }
                 is Resource.Loading ->{
                     _logInstate.send(LogInState(isLoading = true))

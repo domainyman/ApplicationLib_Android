@@ -53,7 +53,7 @@ fun MainScreen(navController: NavController,
         if (userState.value?.isSuccess?.isNotEmpty() ==true){
             val success = userState.value?.isSuccess
             navController.navigate(DestinationScreens.Success.route)
-//            Toast.makeText(context,"$success", Toast.LENGTH_LONG).show()
+            Toast.makeText(context,"$success", Toast.LENGTH_LONG).show()
         }else{
             Login_Composeable(navController = navController, viewModel = viewModel)
         }
