@@ -1,7 +1,7 @@
 package com.app.applicationlib.presentation.content_screen.profile_screen
 
 import androidx.lifecycle.ViewModel
-import com.app.applicationlib.views.repository.AuthRepository
+import com.app.applicationlib.data.repository.AuthRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

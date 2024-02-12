@@ -6,12 +6,11 @@ import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.app.applicationlib.ui.theme.ApplicationLibTheme
-import com.app.applicationlib.views.AppLibNavControllerRoute
+import com.app.applicationlib.presentation.route.AppLibNavControllerRoute
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -19,6 +18,7 @@ class MainActivity : ComponentActivity() {
             window.navigationBarColor = getColor(R.color.black)
             ApplicationLibTheme{
                 CenterTopAppBar()
+
             }
         }
     }

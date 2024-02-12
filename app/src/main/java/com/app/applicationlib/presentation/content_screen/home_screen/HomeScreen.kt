@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.app.applicationlib.R
-import com.app.applicationlib.views.util.bottomappbar.BottomNavigationBar
+import com.app.applicationlib.presentation.util.bottomappbar.BottomNavigationBar
 import kotlinx.coroutines.launch
 
 @Composable
