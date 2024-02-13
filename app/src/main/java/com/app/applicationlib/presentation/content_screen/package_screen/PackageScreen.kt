@@ -1,4 +1,4 @@
-package com.app.applicationlib.presentation.content_screen.profile_screen
+package com.app.applicationlib.presentation.content_screen.package_screen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -20,9 +20,9 @@ import com.app.applicationlib.R
 import com.app.applicationlib.presentation.util.bottomappbar.BottomNavigationBar
 
 @Composable
-fun ProfileScreen(
+fun PackageScreen(
     navController: NavController,
-    viewModel: ProfileViewModel =  hiltViewModel()
+    viewModel: PackageViewModel =  hiltViewModel()
 ){
     Scaffold(
 //        topBar = { TopBar() },
@@ -48,7 +48,7 @@ fun ProfileScreen(
                         modifier = Modifier.fillMaxSize(),
                         contentAlignment = Alignment.Center
                     ){
-                        Text(text = "Profile Screen")
+                        Text(text = "Package Screen")
                     }
                 } }
         }

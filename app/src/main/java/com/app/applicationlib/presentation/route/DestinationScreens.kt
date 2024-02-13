@@ -6,6 +6,6 @@ sealed class DestinationScreens (val route:String){
     object Login : DestinationScreens("login")
     object Success : DestinationScreens("success")
     object Home : DestinationScreens("home")
-    object Profile : DestinationScreens("profile")
+    object Package : DestinationScreens("package")
     object Setting : DestinationScreens("setting")
 }

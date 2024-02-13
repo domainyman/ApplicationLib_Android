@@ -1,6 +1,6 @@
-package com.app.applicationlib.presentation.content_screen.profile_screen
+package com.app.applicationlib.presentation.content_screen.package_screen
 
-data class ProfileState(
+data class PackageState(
     val isLoading : Boolean = false,
     val isSuccess :String? ="",
     val isError :String? =""

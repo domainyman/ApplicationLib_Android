@@ -19,6 +19,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.app.applicationlib.R
 import com.app.applicationlib.di.user.FirebaseUserUtils
+import com.app.applicationlib.presentation.route.DestinationScreens
 import com.app.applicationlib.presentation.util.bottomappbar.BottomNavigationBar
 
 @Composable
@@ -29,36 +30,5 @@ fun SuccessScreen(
     viewModel.currentUser?.let {
         FirebaseUserUtils.initialize(firebaseUser = it)
     }
-
-    Scaffold(
-//        topBar = { TopBar() },
-        bottomBar = { BottomNavigationBar(navController) },
-        content = {
-                padding -> // We have to pass the scaffold inner padding to our content. That's why we use Box.
-            Box(modifier = Modifier.padding(padding))
-            {
-                Image(
-                painter = painterResource(id = R.drawable.bg),
-                contentDescription = "background",
-                contentScale = ContentScale.Crop,
-                modifier = Modifier.fillMaxSize()
-            )
-            Column (
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center,
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(top = 50.dp,start = 30.dp, end = 30.dp),
-            ){
-                Box(
-                    modifier = Modifier.fillMaxSize(),
-                    contentAlignment = Alignment.Center
-                ){
-                    Text(text = "Success Screen",
-                        color = Color.White)
-
-                }
-            } }
-        }
-    )
+    navController.navigate(DestinationScreens.Home.route)
 }

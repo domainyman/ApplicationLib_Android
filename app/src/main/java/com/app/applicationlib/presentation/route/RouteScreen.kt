@@ -7,8 +7,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.app.applicationlib.presentation.content_screen.home_screen.HomeScreen
 import com.app.applicationlib.presentation.content_screen.home_screen.HomeViewModel
-import com.app.applicationlib.presentation.content_screen.profile_screen.ProfileScreen
-import com.app.applicationlib.presentation.content_screen.profile_screen.ProfileViewModel
+import com.app.applicationlib.presentation.content_screen.package_screen.PackageScreen
+import com.app.applicationlib.presentation.content_screen.package_screen.PackageViewModel
 import com.app.applicationlib.presentation.content_screen.setting_screen.SettingScreen
 import com.app.applicationlib.presentation.content_screen.setting_screen.SettingViewModel
 import com.app.applicationlib.presentation.page_screens.login_screen.LogInViewModel
@@ -41,8 +41,8 @@ fun AppLibNavControllerRoute() {
         composable(DestinationScreens.Home.route){
             HomeScreen(navController = navController, viewModel = hiltViewModel<HomeViewModel>())
         }
-        composable(DestinationScreens.Profile.route){
-            ProfileScreen(navController = navController, viewModel = hiltViewModel<ProfileViewModel>())
+        composable(DestinationScreens.Package.route){
+            PackageScreen(navController = navController, viewModel = hiltViewModel<PackageViewModel>())
         }
         composable(DestinationScreens.Setting.route){
             SettingScreen(navController = navController, viewModel = hiltViewModel<SettingViewModel>())

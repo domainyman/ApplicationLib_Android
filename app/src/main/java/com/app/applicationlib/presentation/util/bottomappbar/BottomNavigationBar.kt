@@ -22,7 +22,7 @@ fun BottomNavigationBar(navController: NavController) {
 
     val items = listOf(
         NavigationItem.Home,
-        NavigationItem.Profile,
+        NavigationItem.Package,
         NavigationItem.Setting,
     )
 
